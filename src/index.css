@@ -6,3 +6,7 @@
 .custom-bg-color-primary{
   @apply bg-amber-400
 }
+
+.active{
+  @apply font-bold text-amber-400
+}

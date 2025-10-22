@@ -9,7 +9,7 @@ export default function CategoryCard({ category }) {
       </div>
 
       <figure className="relative cursor-pointer overflow-hidden group">
-        <Link to={`/category/${category.categoryId}`}>
+        <Link to={`/category/${category.name}`}>
           <img
             src={category.icon}
             alt={category.name}

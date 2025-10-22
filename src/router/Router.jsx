@@ -2,6 +2,9 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import RootLayout from "../layout/RootLayout";
 import HomePage from "../pages/HomePage";
+import Category from "../components/HomePage/Category";
+import CategoryPage from "../pages/CategoryPage";
+import CategoryWiseSkillsPage from "./../pages/CategoryWiseSkillsPage";
 
 let router = createBrowserRouter([
   {
@@ -13,6 +16,19 @@ let router = createBrowserRouter([
         index: true,
         element: <HomePage />,
         loader: () => fetch("/data/categories.json"),
+      },
+      {
+        path: "/category",
+        element: <CategoryPage />,
+        loader: () => fetch("/data/categories.json"),
+      },
+      {
+        path: "/category/:category",
+        element: <CategoryWiseSkillsPage />,
+      },
+      {
+        path: "*",
+        element: <div>not found</div>,
       },
     ],
   },
