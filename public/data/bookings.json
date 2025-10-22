@@ -1,0 +1,92 @@
+[
+    {
+        "bookingId": "b1",
+        "skillId": "s3",
+        "userId": "u2",
+        "name": "Sara Hossain",
+        "email": "sara@skillswap.com",
+        "status": "confirmed",
+        "bookedAt": "2025-04-12T08:10:00Z"
+    },
+    {
+        "bookingId": "b2",
+        "skillId": "s2",
+        "userId": "u3",
+        "name": "John Lee",
+        "email": "john@skillswap.com",
+        "status": "pending",
+        "bookedAt": "2025-04-13T10:15:00Z"
+    },
+    {
+        "bookingId": "b3",
+        "skillId": "s1",
+        "userId": "u4",
+        "name": "Maya Rahman",
+        "email": "maya@skillswap.com",
+        "status": "confirmed",
+        "bookedAt": "2025-04-14T11:20:00Z"
+    },
+    {
+        "bookingId": "b4",
+        "skillId": "s4",
+        "userId": "u5",
+        "name": "David Chen",
+        "email": "david@skillswap.com",
+        "status": "confirmed",
+        "bookedAt": "2025-04-15T12:30:00Z"
+    },
+    {
+        "bookingId": "b5",
+        "skillId": "s5",
+        "userId": "u6",
+        "name": "Emily Brown",
+        "email": "emily@skillswap.com",
+        "status": "pending",
+        "bookedAt": "2025-04-16T13:40:00Z"
+    },
+    {
+        "bookingId": "b6",
+        "skillId": "s4",
+        "userId": "u7",
+        "name": "Hassan Ahmed",
+        "email": "hassan@skillswap.com",
+        "status": "cancelled",
+        "bookedAt": "2025-04-17T14:50:00Z"
+    },
+    {
+        "bookingId": "b7",
+        "skillId": "s1",
+        "userId": "u8",
+        "name": "Sophia Turner",
+        "email": "sophia@skillswap.com",
+        "status": "confirmed",
+        "bookedAt": "2025-04-18T15:00:00Z"
+    },
+    {
+        "bookingId": "b8",
+        "skillId": "s2",
+        "userId": "u9",
+        "name": "Mohammad Ali",
+        "email": "ali@skillswap.com",
+        "status": "confirmed",
+        "bookedAt": "2025-04-19T16:20:00Z"
+    },
+    {
+        "bookingId": "b9",
+        "skillId": "s6",
+        "userId": "u10",
+        "name": "Linda Perez",
+        "email": "linda@skillswap.com",
+        "status": "confirmed",
+        "bookedAt": "2025-04-20T17:40:00Z"
+    },
+    {
+        "bookingId": "b10",
+        "skillId": "s7",
+        "userId": "u1",
+        "name": "Alex Martin",
+        "email": "alex@skillswap.com",
+        "status": "pending",
+        "bookedAt": "2025-04-21T18:50:00Z"
+    }
+]

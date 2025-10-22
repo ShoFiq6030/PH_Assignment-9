@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+.custom-bg-color-primary{
+  @apply bg-amber-400
+}

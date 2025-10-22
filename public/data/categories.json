@@ -1,0 +1,62 @@
+[
+  {
+    "categoryId": "c1",
+    "name": "Music",
+    "icon": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "description": "Explore the world of melodies, rhythms, and instruments. Learn to play, compose, and appreciate diverse genres, from classical symphonies to modern beats, nurturing your creativity and emotional expression through sound."
+  },
+  {
+    "categoryId": "c2",
+    "name": "Language",
+    "icon": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "description": "Master new languages and communication skills to connect across cultures. Improve your vocabulary, pronunciation, and grammar while exploring the beauty of global expression and linguistic diversity in everyday conversations."
+  },
+  {
+    "categoryId": "c3",
+    "name": "Technology",
+    "icon": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "description": "Stay ahead with cutting-edge innovations in tech. Learn about programming, artificial intelligence, cybersecurity, and emerging digital tools shaping the modern world and transforming industries through smarter solutions."
+  },
+  {
+    "categoryId": "c4",
+    "name": "Health",
+    "icon": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "description": "Focus on your well-being with practical guides on nutrition, mental health, and physical fitness. Build healthy habits that support balance, longevity, and happiness in your daily life."
+  },
+  {
+    "categoryId": "c5",
+    "name": "Art",
+    "icon": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880",
+    "description": "Discover creativity through painting, sketching, and visual storytelling. Learn artistic techniques and color theory while exploring how art influences culture, emotion, and human expression in powerful ways."
+  },
+  {
+    "categoryId": "c6",
+    "name": "Design",
+    "icon": "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764",
+    "description": "Learn the principles of modern design, including layout, color, and typography. Explore digital and product design trends to create visually stunning and user-centered experiences for the modern world."
+  },
+  {
+    "categoryId": "c7",
+    "name": "Cooking",
+    "icon": "https://images.unsplash.com/photo-1528712306091-ed0763094c98?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=740",
+    "description": "Unleash your inner chef by mastering culinary techniques from around the globe. Learn to prepare delicious meals, balance flavors, and present dishes beautifully for any occasion."
+  },
+  {
+    "categoryId": "c8",
+    "name": "Business",
+    "icon": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1332",
+    "description": "Gain insights into entrepreneurship, management, and marketing. Learn to develop business strategies, manage teams effectively, and create value-driven companies that thrive in competitive markets."
+  },
+  {
+    "categoryId": "c9",
+    "name": "Fitness",
+    "icon": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+    "description": "Build strength, endurance, and confidence through guided workouts and fitness tips. Learn the best exercises, recovery methods, and routines to achieve a healthier, more active lifestyle."
+  },
+  {
+    "categoryId": "c10",
+    "name": "Lifestyle",
+    "icon": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1169",
+    "description": "Enhance your everyday living with inspiration for fashion, travel, home decor, and mindfulness. Discover ideas to build a balanced, stylish, and fulfilling lifestyle tailored to your personal goals."
+  }
+]

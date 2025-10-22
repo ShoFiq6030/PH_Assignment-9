@@ -1,0 +1,122 @@
+[
+    {
+        "skillId": "s1",
+        "skillName": "Beginner Guitar Lessons",
+        "providerId": "u1",
+        "providerName": "Alex Martin",
+        "price": 20,
+        "rating": 4.8,
+        "slotsAvailable": 3,
+        "description": "Acoustic guitar classes for complete beginners focusing on chords and rhythm.",
+        "image": "https://i.postimg.cc/zfKkRkBb/guitar.jpg",
+        "category": "Music"
+    },
+    {
+        "skillId": "s2",
+        "skillName": "Spoken English Practice",
+        "providerId": "u2",
+        "providerName": "Sara Hossain",
+        "price": 10,
+        "rating": 4.6,
+        "slotsAvailable": 5,
+        "description": "Conversational English sessions to improve fluency and pronunciation.",
+        "image": "https://i.postimg.cc/MGnhj6fM/english.jpg",
+        "category": "Language"
+    },
+    {
+        "skillId": "s3",
+        "skillName": "React Frontend Bootcamp",
+        "providerId": "u3",
+        "providerName": "John Lee",
+        "price": 30,
+        "rating": 4.9,
+        "slotsAvailable": 2,
+        "description": "Learn React from scratch with real-world projects and state management.",
+        "image": "https://i.postimg.cc/XqPcPb6x/react.jpg",
+        "category": "Technology"
+    },
+    {
+        "skillId": "s4",
+        "skillName": "Morning Yoga for Beginners",
+        "providerId": "u4",
+        "providerName": "Maya Rahman",
+        "price": 15,
+        "rating": 4.7,
+        "slotsAvailable": 6,
+        "description": "Relaxing yoga sessions focusing on breathing, posture, and flexibility.",
+        "image": "https://i.postimg.cc/zXQJv8dD/yoga.jpg",
+        "category": "Health"
+    },
+    {
+        "skillId": "s5",
+        "skillName": "Photography Basics & Lightroom",
+        "providerId": "u5",
+        "providerName": "David Chen",
+        "price": 18,
+        "rating": 4.5,
+        "slotsAvailable": 4,
+        "description": "Learn to capture perfect shots and edit them professionally in Lightroom.",
+        "image": "https://i.postimg.cc/fy5r7Tn3/photography.jpg",
+        "category": "Art"
+    },
+    {
+        "skillId": "s6",
+        "skillName": "Graphic Design with Canva",
+        "providerId": "u6",
+        "providerName": "Emily Brown",
+        "price": 12,
+        "rating": 4.6,
+        "slotsAvailable": 5,
+        "description": "Create stunning social media graphics and posters using Canva tools.",
+        "image": "https://i.postimg.cc/3xPkMQsy/design.jpg",
+        "category": "Design"
+    },
+    {
+        "skillId": "s7",
+        "skillName": "Arabic Language Basics",
+        "providerId": "u7",
+        "providerName": "Hassan Ahmed",
+        "price": 14,
+        "rating": 4.4,
+        "slotsAvailable": 5,
+        "description": "Learn Arabic alphabets, pronunciation, and simple daily conversation.",
+        "image": "https://i.postimg.cc/nrzRWz7z/arabic.jpg",
+        "category": "Language"
+    },
+    {
+        "skillId": "s8",
+        "skillName": "Baking 101: Cakes & Pastries",
+        "providerId": "u8",
+        "providerName": "Sophia Turner",
+        "price": 22,
+        "rating": 4.9,
+        "slotsAvailable": 3,
+        "description": "Master the art of baking delicious homemade cakes and pastries.",
+        "image": "https://i.postimg.cc/vTVy6XgD/baking.jpg",
+        "category": "Cooking"
+    },
+    {
+        "skillId": "s9",
+        "skillName": "Personal Fitness Coaching",
+        "providerId": "u9",
+        "providerName": "Mohammad Ali",
+        "price": 25,
+        "rating": 4.8,
+        "slotsAvailable": 4,
+        "description": "Customized workout plans and guidance to reach your fitness goals.",
+        "image": "https://i.postimg.cc/ZKx4mLw9/fitness.jpg",
+        "category": "Health"
+    },
+    {
+        "skillId": "s10",
+        "skillName": "Learn Spanish for Travel",
+        "providerId": "u10",
+        "providerName": "Linda Perez",
+        "price": 15,
+        "rating": 4.7,
+        "slotsAvailable": 5,
+        "description": "Basic Spanish lessons to help travelers communicate effectively.",
+        "image": "https://i.postimg.cc/jdWTVkx4/spanish.jpg",
+        "category": "Language"
+    }
+]

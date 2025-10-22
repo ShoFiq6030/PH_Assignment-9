@@ -1,0 +1,82 @@
+[
+    {
+        "reviewId": "r1",
+        "skillId": "s1",
+        "userId": "u2",
+        "rating": 5,
+        "comment": "Loved the guitar lessons!",
+        "createdAt": "2025-04-12T09:00:00Z"
+    },
+    {
+        "reviewId": "r2",
+        "skillId": "s2",
+        "userId": "u3",
+        "rating": 4,
+        "comment": "Great English conversation sessions.",
+        "createdAt": "2025-04-13T09:30:00Z"
+    },
+    {
+        "reviewId": "r3",
+        "skillId": "s3",
+        "userId": "u4",
+        "rating": 5,
+        "comment": "Excellent React training!",
+        "createdAt": "2025-04-14T10:00:00Z"
+    },
+    {
+        "reviewId": "r4",
+        "skillId": "s4",
+        "userId": "u5",
+        "rating": 5,
+        "comment": "Yoga helped me relax.",
+        "createdAt": "2025-04-15T10:30:00Z"
+    },
+    {
+        "reviewId": "r5",
+        "skillId": "s5",
+        "userId": "u6",
+        "rating": 4,
+        "comment": "Photography tips were great!",
+        "createdAt": "2025-04-16T11:00:00Z"
+    },
+    {
+        "reviewId": "r6",
+        "skillId": "s6",
+        "userId": "u7",
+        "rating": 5,
+        "comment": "Loved designing with Canva.",
+        "createdAt": "2025-04-17T11:30:00Z"
+    },
+    {
+        "reviewId": "r7",
+        "skillId": "s7",
+        "userId": "u8",
+        "rating": 4,
+        "comment": "Arabic lessons were clear.",
+        "createdAt": "2025-04-18T12:00:00Z"
+    },
+    {
+        "reviewId": "r8",
+        "skillId": "s8",
+        "userId": "u9",
+        "rating": 5,
+        "comment": "Cakes turned out amazing!",
+        "createdAt": "2025-04-19T12:30:00Z"
+    },
+    {
+        "reviewId": "r9",
+        "skillId": "s9",
+        "userId": "u10",
+        "rating": 5,
+        "comment": "Fitness guidance was perfect.",
+        "createdAt": "2025-04-20T13:00:00Z"
+    },
+    {
+        "reviewId": "r10",
+        "skillId": "s10",
+        "userId": "u1",
+        "rating": 4,
+        "comment": "Good Spanish introduction.",
+        "createdAt": "2025-04-21T13:30:00Z"
+    }
+]
