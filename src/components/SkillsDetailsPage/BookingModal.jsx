@@ -59,7 +59,7 @@ export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
 
           {/* Buttons */}
           <div className="modal-action flex justify-end gap-3 mt-6">
-            <button className="btn btn-primary" type="submit">
+            <button className="btn custom-bg-color-primary" type="submit">
               Submit
             </button>
             <button
