@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./../components/common/Navbar";
 import { Outlet } from "react-router";
 import Footer from "../components/common/Footer";
+import { ToastContainer } from "react-toastify";
 
 export default function RootLayout() {
   return (
@@ -9,7 +10,8 @@ export default function RootLayout() {
       <div className="sticky top-0 z-50">
         <Navbar />
       </div>
-      <div className="min-h-screen">
+      <div className="min-h-screen mx-auto">
+        <ToastContainer />
         <Outlet />
       </div>
 

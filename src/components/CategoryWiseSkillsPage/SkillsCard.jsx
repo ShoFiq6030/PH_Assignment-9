@@ -26,7 +26,7 @@ export default function SkillsCard({ skill }) {
   return (
     <div className="card card-side bg-base-100 shadow-sm w-[500px] hover:scale-102 transition-transform duration-300">
       <figure className="w-1/2">
-        <img src={image} alt="Movie" />
+        <img src={image} alt={skillName} />
       </figure>
       <div className="card-body w-1/2 ">
         <h2 className="card-title">{skillName}</h2>
@@ -39,7 +39,12 @@ export default function SkillsCard({ skill }) {
         <p>Price: {price}$</p>
 
         <div className="card-actions justify-end">
-          <Link to={`/skills/${skillId}`} className="btn custom-bg-color-primary w-full">Details</Link>
+          <Link
+            to={`/skills/${skillId}`}
+            className="btn custom-bg-color-primary w-full"
+          >
+            Details
+          </Link>
         </div>
       </div>
     </div>
