@@ -1,7 +1,10 @@
-import React from "react";
-import { NavLink } from "react-router";
+import React, { use } from "react";
+import { Link, NavLink } from "react-router";
+import { AuthContext } from "../../provider/AuthProvider";
 
 export default function Navbar() {
+  const { user } = use(AuthContext);
+  console.log(user);
   const links = (
     <>
       <li>
@@ -44,14 +47,18 @@ export default function Navbar() {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link to="/" className="font-semibold  text-xl">
+          SkillExplorer
+        </Link>
       </div>
       {/* desktop menu  */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end ">
+        <Link to={"/login"} className="btn custom-bg-color-primary ">
+          Login
+        </Link>
       </div>
     </nav>
   );

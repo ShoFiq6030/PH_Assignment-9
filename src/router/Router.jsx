@@ -6,6 +6,8 @@ import Category from "../components/HomePage/Category";
 import CategoryPage from "../pages/CategoryPage";
 import CategoryWiseSkillsPage from "./../pages/CategoryWiseSkillsPage";
 import SkillsDetailsPage from "../pages/SkillsDetailsPage";
+import LoginPage from "../pages/LoginPage";
+import RegistrationPage from "../pages/RegistrationPage";
 
 let router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ let router = createBrowserRouter([
       {
         path: "/skills/:skillId",
         element: <SkillsDetailsPage />,
+      },
+      {
+        path: "/login",
+        element: <LoginPage/>,
+      },
+      {
+        path: "/register",
+        element: <RegistrationPage/>,
       },
       {
         path: "*",
