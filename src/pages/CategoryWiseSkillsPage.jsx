@@ -37,7 +37,7 @@ export default function CategoryWiseSkillsPage() {
 
   return (
     <section className="h-screen ">
-      <div className="container m-auto grid grid-cols-3 my-10 gap-5">
+      <div className="container m-auto grid grid-cols-2 my-10 gap-5">
         {skills.map((skill) => (
           <SkillsCard key={skill.skillId} skill={skill} />
         ))}

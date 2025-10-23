@@ -5,6 +5,7 @@ import HomePage from "../pages/HomePage";
 import Category from "../components/HomePage/Category";
 import CategoryPage from "../pages/CategoryPage";
 import CategoryWiseSkillsPage from "./../pages/CategoryWiseSkillsPage";
+import SkillsDetailsPage from "../pages/SkillsDetailsPage";
 
 let router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ let router = createBrowserRouter([
       {
         path: "/category/:category",
         element: <CategoryWiseSkillsPage />,
+      },
+      {
+        path: "/skills/:skillId",
+        element: <SkillsDetailsPage />,
       },
       {
         path: "*",

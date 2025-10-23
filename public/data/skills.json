@@ -5,7 +5,7 @@
         "providerId": "u1",
         "providerName": "Alex Martin",
         "price": 20,
-        "rating": 4.8,
+        "rating": 4.0,
         "slotsAvailable": 3,
         "description": "Acoustic guitar classes for complete beginners focusing on chords and rhythm.",
         "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
@@ -17,10 +17,10 @@
         "providerId": "u2",
         "providerName": "Sara Hossain",
         "price": 10,
-        "rating": 4.6,
+        "rating": 4.2,
         "slotsAvailable": 5,
         "description": "Conversational English sessions to improve fluency and pronunciation.",
-        "image": "https://i.postimg.cc/MGnhj6fM/english.jpg",
+        "image": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
         "category": "Language"
     },
     {
@@ -32,7 +32,7 @@
         "rating": 4.9,
         "slotsAvailable": 2,
         "description": "Learn React from scratch with real-world projects and state management.",
-        "image": "https://i.postimg.cc/XqPcPb6x/react.jpg",
+        "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
         "category": "Technology"
     },
     {
@@ -44,7 +44,7 @@
         "rating": 4.7,
         "slotsAvailable": 6,
         "description": "Relaxing yoga sessions focusing on breathing, posture, and flexibility.",
-        "image": "https://i.postimg.cc/zXQJv8dD/yoga.jpg",
+        "image": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
         "category": "Health"
     },
     {
@@ -53,10 +53,10 @@
         "providerId": "u5",
         "providerName": "David Chen",
         "price": 18,
-        "rating": 4.5,
+        "rating": 4.0,
         "slotsAvailable": 4,
         "description": "Learn to capture perfect shots and edit them professionally in Lightroom.",
-        "image": "https://i.postimg.cc/fy5r7Tn3/photography.jpg",
+        "image": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880",
         "category": "Art"
     },
     {
@@ -68,7 +68,7 @@
         "rating": 4.6,
         "slotsAvailable": 5,
         "description": "Create stunning social media graphics and posters using Canva tools.",
-        "image": "https://i.postimg.cc/3xPkMQsy/design.jpg",
+        "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764",
         "category": "Design"
     },
     {
@@ -80,7 +80,7 @@
         "rating": 4.4,
         "slotsAvailable": 5,
         "description": "Learn Arabic alphabets, pronunciation, and simple daily conversation.",
-        "image": "https://i.postimg.cc/nrzRWz7z/arabic.jpg",
+        "image": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
         "category": "Language"
     },
     {
@@ -92,7 +92,7 @@
         "rating": 4.9,
         "slotsAvailable": 3,
         "description": "Master the art of baking delicious homemade cakes and pastries.",
-        "image": "https://i.postimg.cc/vTVy6XgD/baking.jpg",
+        "image": "https://images.unsplash.com/photo-1528712306091-ed0763094c98?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=740",
         "category": "Cooking"
     },
     {
@@ -104,7 +104,7 @@
         "rating": 4.8,
         "slotsAvailable": 4,
         "description": "Customized workout plans and guidance to reach your fitness goals.",
-        "image": "https://i.postimg.cc/ZKx4mLw9/fitness.jpg",
+        "image": "https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
         "category": "Health"
     },
     {
@@ -113,10 +113,10 @@
         "providerId": "u10",
         "providerName": "Linda Perez",
         "price": 15,
-        "rating": 4.7,
+        "rating": 4.1,
         "slotsAvailable": 5,
         "description": "Basic Spanish lessons to help travelers communicate effectively.",
-        "image": "https://i.postimg.cc/jdWTVkx4/spanish.jpg",
+        "image": "https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
         "category": "Language"
     }
 ]
