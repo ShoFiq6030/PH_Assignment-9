@@ -67,7 +67,7 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end ">
-        {user && <span className="mr-4">Welcome, {user.email}</span>}
+        {user && <Link to={`/profile/${user.uid}`} className="mr-4">Welcome, {user.email}</Link>}
         {user ? (
           <button
             onClick={handleLogout}

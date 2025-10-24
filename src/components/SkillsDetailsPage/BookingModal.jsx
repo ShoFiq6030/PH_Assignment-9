@@ -1,6 +1,9 @@
-import React from "react";
+import React, { use } from "react";
+import { AuthContext } from "../../provider/AuthProvider";
 
 export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
+  const { user } = use(AuthContext);
+  console.log(user);
   return (
     <dialog id="my_modal_1" className="modal">
       <div className="modal-box space-y-6">
@@ -22,6 +25,7 @@ export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
             <input
               type="text"
               name="name"
+              value={user?.displayName || ""}
               placeholder="Enter your name"
               className="input input-bordered w-full"
               required
@@ -51,6 +55,7 @@ export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
                 type="email"
                 name="email"
                 placeholder="mail@site.com"
+                value={user?.email || ""}
                 className="grow"
                 required
               />

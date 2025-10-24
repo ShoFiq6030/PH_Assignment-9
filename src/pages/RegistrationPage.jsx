@@ -1,17 +1,41 @@
-import React, { use } from "react";
-import { Link } from "react-router";
+import React, { use, useState } from "react";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 export default function RegistrationPage() {
-  const { createUser } = use(AuthContext);
+  const { createUser, setUser } = use(AuthContext);
+  const [error, setError] = useState("");
+  const redirect = useNavigate();
+
   const handelSignUp = (e) => {
     e.preventDefault();
+    setError("");
+    const regex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
+
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(name, email, password);
-    createUser(email, password);
+
+    if (!regex.test(password)) {
+      setError(
+        "Password must be at least 6 characters and include both uppercase and lowercase letters."
+      );
+      return;
+    }
+    console.log(name, email, password);
+    try {
+      const userDetails = createUser(email, password);
+      console.log("User created successfully:", userDetails);
+      toast.success("User created successfully!");
+      setUser(userDetails.user);
+    } catch (err) {
+      console.error("Error creating user:", err);
+      setError(err.message);
+    }
   };
+
   return (
     <div className="flex justify-center items-center min-h-screen">
       <form
@@ -40,6 +64,7 @@ export default function RegistrationPage() {
           className="input"
           placeholder="Password"
         />
+        {error && <p className="text-red-500">{error}</p>}
 
         <p>
           already have account?{" "}

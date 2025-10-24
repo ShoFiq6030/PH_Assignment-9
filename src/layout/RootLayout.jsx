@@ -11,8 +11,8 @@ export default function RootLayout() {
         <Navbar />
       </div>
       <div className="min-h-screen mx-auto">
-        <ToastContainer />
         <Outlet />
+        <ToastContainer />
       </div>
 
       <Footer />

@@ -5,12 +5,17 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
+  GoogleAuthProvider,
+  signInWithPopup,
+  updateProfile,
 } from "firebase/auth";
+
 import app from "../utils/firebaseConfig";
 
 export const AuthContext = createContext();
 
 const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -25,19 +30,8 @@ export default function AuthProvider({ children }) {
   }, []);
 
   // create user with email and password
-  const createUser = async (email, password) => {
-    try {
-      const userCredential = await createUserWithEmailAndPassword(
-        auth,
-        email,
-        password
-      );
-      // console.log("User created:", userCredential.user);
-      setUser(userCredential.user);
-      return userCredential.user;
-    } catch (error) {
-      console.error("Error creating user:", error.code, error.message);
-    }
+  const createUser = (email, password) => {
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
   // login user with email and password
@@ -51,7 +45,17 @@ export default function AuthProvider({ children }) {
     return signOut(auth);
   };
 
-  const authData = { createUser, user, setUser, login, logout };
+  // google signin
+  const googleSignin = () => {
+    return signInWithPopup(auth, provider);
+  };
+
+  // update useInfo
+  const updateProfileInfo = (userInfo) => {
+    return updateProfile(auth.currentUser, userInfo);
+  };
+
+  const authData = { createUser, user, setUser, login, logout, googleSignin,updateProfileInfo };
 
   return (
     <AuthContext.Provider value={authData}>{children}</AuthContext.Provider>

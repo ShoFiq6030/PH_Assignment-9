@@ -8,6 +8,8 @@ import CategoryWiseSkillsPage from "./../pages/CategoryWiseSkillsPage";
 import SkillsDetailsPage from "../pages/SkillsDetailsPage";
 import LoginPage from "../pages/LoginPage";
 import RegistrationPage from "../pages/RegistrationPage";
+import PrivateRoute from "../provider/PrivateRoute";
+import UserProfilePage from "../pages/UserProfilePage";
 
 let router = createBrowserRouter([
   {
@@ -31,15 +33,23 @@ let router = createBrowserRouter([
       },
       {
         path: "/skills/:skillId",
-        element: <SkillsDetailsPage />,
+        element: (
+          <PrivateRoute>
+            <SkillsDetailsPage />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
-        element: <LoginPage/>,
+        element: <LoginPage />,
       },
       {
         path: "/register",
-        element: <RegistrationPage/>,
+        element: <RegistrationPage />,
+      },
+      {
+        path: "/profile/:userId",
+        element: <UserProfilePage />,
       },
       {
         path: "*",
