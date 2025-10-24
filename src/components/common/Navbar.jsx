@@ -1,10 +1,21 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../provider/AuthProvider";
+import { toast } from "react-toastify";
 
 export default function Navbar() {
-  const { user } = use(AuthContext);
+  const { user, logout } = use(AuthContext);
+
   console.log(user);
+  const handleLogout = async () => {
+    try {
+      await logout();
+      toast.success("Logout successful!");
+    } catch (err) {
+      console.error("Error logging out:", err);
+    }
+  };
+
   const links = (
     <>
       <li>
@@ -56,9 +67,19 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end ">
-        <Link to={"/login"} className="btn custom-bg-color-primary ">
-          Login
-        </Link>
+        {user && <span className="mr-4">Welcome, {user.email}</span>}
+        {user ? (
+          <button
+            onClick={handleLogout}
+            className="btn custom-bg-color-primary "
+          >
+            Logout
+          </button>
+        ) : (
+          <Link to={"/login"} className="btn custom-bg-color-primary ">
+            Login
+          </Link>
+        )}
       </div>
     </nav>
   );
