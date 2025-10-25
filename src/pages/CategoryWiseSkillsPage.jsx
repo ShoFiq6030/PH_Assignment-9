@@ -35,6 +35,16 @@ export default function CategoryWiseSkillsPage() {
     return <Loading />;
   }
 
+  if (skills.length == 0) {
+    return (
+      <section className="h-screen ">
+        <div className="container m-auto grid grid-cols-2 my-10 gap-5">
+          <div>No data found</div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="h-screen ">
       <div className="container m-auto grid grid-cols-2 my-10 gap-5">

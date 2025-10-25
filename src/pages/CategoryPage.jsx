@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router";
 
 export default function CategoryPage() {
   const data = useLoaderData();
+ 
   return (
     <div>
       <Category data={data} />

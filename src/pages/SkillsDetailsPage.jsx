@@ -9,6 +9,7 @@ export default function SkillsDetailsPage() {
   const [skill, setSkill] = useState(null);
   const [loading, setLoading] = useState(true);
   const [openModal, setOpenModal] = useState(false);
+  const [isBooked, setIsBooked] = useState(false);
 
   const { skillId } = useParams();
 
@@ -39,13 +40,11 @@ export default function SkillsDetailsPage() {
     }
     setOpenModal(!openModal);
   };
-  const handleSubmitBooking = (e) => {
-    e.preventDefault();
-    const name = e.target.name.value;
-    const email = e.target.email.value;
+  const handleSubmitBooking = (formData) => {
     toast.success("Booking Successful!");
-    console.log(name, email);
+    console.log(formData);
     handleToggleModal();
+    setIsBooked(true);
   };
 
   if (loading) {
@@ -91,10 +90,15 @@ export default function SkillsDetailsPage() {
         <p>Rating: {skill.rating} ⭐</p>
         <p>Slots Available: {skill.slotsAvailable}</p>
         <button
-          className="btn custom-bg-color-primary w-1/2"
+          className={`btn ${
+            isBooked
+              ? "bg-green-500 disabled cursor-not-allowed"
+              : "custom-bg-color-primary"
+          } w-1/2`}
           onClick={handleToggleModal}
+          disabled={isBooked}
         >
-          Book Now
+          {isBooked ? <p className="text-white">Booked</p> : "Book Now"}
         </button>
       </div>
     </section>

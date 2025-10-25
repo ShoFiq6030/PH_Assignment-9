@@ -1,5 +1,5 @@
 import React, { use, useState } from "react";
-import { useParams } from "react-router";
+// import { useParams } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 import UserUpdateModal from "../components/UserProfilePage/UserUpdateModal";
 import { toast } from "react-toastify";
@@ -41,7 +41,7 @@ export default function UserProfilePage() {
           handleProfileUpdate={handleProfileUpdate}
         />
       )}
-      <div className="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 wrap-break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16">
+      <div className="relative max-w-md mx-auto md:max-w-2xl  min-w-0 wrap-break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16">
         <div className="px-6">
           <div className="flex flex-wrap justify-center">
             <div className="w-full flex justify-center">

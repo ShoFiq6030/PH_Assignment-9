@@ -1,8 +1,32 @@
-import React, { use } from "react";
+import React, { use, useEffect, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 
 export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
   const { user } = use(AuthContext);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+  });
+
+  useEffect(() => {
+    if (user) {
+      setFormData({
+        name: user.displayName || "",
+        email: user.email || "",
+      });
+    }
+  }, [user]);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onSubmitBooking(formData);
+  };
   console.log(user);
   return (
     <dialog id="my_modal_1" className="modal">
@@ -16,7 +40,7 @@ export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
         </p>
 
         {/* Booking Form */}
-        <form method="dialog" className="space-y-4" onSubmit={onSubmitBooking}>
+        <form method="dialog" className="space-y-4" onSubmit={handleSubmit}>
           {/* Name Field */}
           <div className="form-control">
             <label className="label">
@@ -25,7 +49,8 @@ export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
             <input
               type="text"
               name="name"
-              value={user?.displayName || ""}
+              value={formData.name}
+              onChange={handleChange}
               placeholder="Enter your name"
               className="input input-bordered w-full"
               required
@@ -55,7 +80,8 @@ export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
                 type="email"
                 name="email"
                 placeholder="mail@site.com"
-                value={user?.email || ""}
+                value={formData.email}
+                onChange={handleChange}
                 className="grow"
                 required
               />
