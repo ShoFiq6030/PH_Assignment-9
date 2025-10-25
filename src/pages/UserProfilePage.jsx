@@ -6,8 +6,8 @@ import { toast } from "react-toastify";
 
 export default function UserProfilePage() {
   const [openModal, setOpenModal] = useState(false);
-  const { userId } = useParams();
-  const { user, updateProfileInfo } = use(AuthContext);
+  // const { userId } = useParams();
+  const { user, updateProfileInfo, setUser } = use(AuthContext);
   console.log(user);
   const handleProfileUpdate = async (e) => {
     e.preventDefault();
@@ -22,11 +22,17 @@ export default function UserProfilePage() {
       await updateProfileInfo(userInfo);
       toast.success("Profile updated successFully");
       setOpenModal(false);
+      setUser({
+        ...user,
+        displayName,
+        photoURL,
+      });
     } catch (err) {
       console.error("Error updating profile:", err);
       toast.error("Error updating profile");
     }
   };
+  // console.log(user.photoURL);
   return (
     <div>
       {openModal && (

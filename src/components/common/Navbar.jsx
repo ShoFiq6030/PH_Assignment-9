@@ -1,16 +1,18 @@
 import React, { use } from "react";
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../../provider/AuthProvider";
 import { toast } from "react-toastify";
 
 export default function Navbar() {
   const { user, logout } = use(AuthContext);
+  const navigation = useNavigate();
 
-  console.log(user);
+  // console.log(user);
   const handleLogout = async () => {
     try {
       await logout();
       toast.success("Logout successful!");
+      navigation("/");
     } catch (err) {
       console.error("Error logging out:", err);
     }
@@ -67,7 +69,21 @@ export default function Navbar() {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end ">
-        {user && <Link to={`/profile/${user.uid}`} className="mr-4">Welcome, {user.email}</Link>}
+        {user && (
+          <>
+            <Link to={`/profile/${user.uid}`} className="mr-4">
+              <img
+                src={
+                  user.photoURL ||
+                  "https://res.cloudinary.com/dutnq2gdm/image/upload/v1745864054/user-1699635_640_mgcjmz.png"
+                }
+                alt={user.displayName}
+                title={user.displayName || user.email}
+                className={`w-10 h-10 object-cover rounded-full border-2  `}
+              />
+            </Link>
+          </>
+        )}
         {user ? (
           <button
             onClick={handleLogout}

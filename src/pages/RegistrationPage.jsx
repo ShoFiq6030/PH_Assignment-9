@@ -16,6 +16,7 @@ export default function RegistrationPage() {
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
+    const photoUrl = e.target.photoUrl.value;
     console.log(name, email, password);
 
     if (!regex.test(password)) {
@@ -30,6 +31,7 @@ export default function RegistrationPage() {
       console.log("User created successfully:", userDetails);
       toast.success("User created successfully!");
       setUser(userDetails.user);
+      redirect("/");
     } catch (err) {
       console.error("Error creating user:", err);
       setError(err.message);
@@ -47,7 +49,13 @@ export default function RegistrationPage() {
         </h2>
         {/* name  */}
         <label className="label">Name</label>
-        <input type="name" name="name" className="input" placeholder="Name" />
+        <input
+          type="name"
+          name="name"
+          className="input"
+          placeholder="Name"
+          required
+        />
         {/* email  */}
         <label className="label">Email</label>
         <input
@@ -55,6 +63,15 @@ export default function RegistrationPage() {
           name="email"
           className="input"
           placeholder="Email"
+          required
+        />
+        {/* photo url  */}
+        <label className="label">Photo URL</label>
+        <input
+          type="text"
+          name="photoUrl"
+          className="input"
+          placeholder="Photo URL"
         />
         {/* password  */}
         <label className="label">Password</label>
@@ -63,6 +80,7 @@ export default function RegistrationPage() {
           name="password"
           className="input"
           placeholder="Password"
+          required
         />
         {error && <p className="text-red-500">{error}</p>}
 
