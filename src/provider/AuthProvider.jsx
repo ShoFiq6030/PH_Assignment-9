@@ -8,6 +8,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   updateProfile,
+  sendPasswordResetEmail,
 } from "firebase/auth";
 
 import app from "../utils/firebaseConfig";
@@ -55,7 +56,21 @@ export default function AuthProvider({ children }) {
     return updateProfile(auth.currentUser, userInfo);
   };
 
-  const authData = { createUser, user, setUser, login, logout, googleSignin,updateProfileInfo };
+  // password reset
+  const resetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
+
+  const authData = {
+    createUser,
+    user,
+    setUser,
+    login,
+    logout,
+    googleSignin,
+    updateProfileInfo,
+    resetPassword,
+  };
 
   return (
     <AuthContext.Provider value={authData}>{children}</AuthContext.Provider>

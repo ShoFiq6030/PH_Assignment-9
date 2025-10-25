@@ -10,6 +10,7 @@ import LoginPage from "../pages/LoginPage";
 import RegistrationPage from "../pages/RegistrationPage";
 import PrivateRoute from "../provider/PrivateRoute";
 import UserProfilePage from "../pages/UserProfilePage";
+import PasswordResetPage from "../pages/PasswordResetPage";
 
 let router = createBrowserRouter([
   {
@@ -50,6 +51,14 @@ let router = createBrowserRouter([
       {
         path: "/profile/:userId",
         element: <UserProfilePage />,
+      },
+      {
+        path: "/blogs",
+        element: <h2>Coming Soon...</h2>,
+      },
+      {
+        path: "/password-reset",
+        element: <PasswordResetPage />,
       },
       {
         path: "*",

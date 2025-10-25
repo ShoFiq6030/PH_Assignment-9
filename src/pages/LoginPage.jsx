@@ -33,7 +33,7 @@ export default function LoginPage() {
       setLoading(false);
     }
 
-    // e.target.reset();
+    e.target.reset();
   };
   const handleGoogleSignIn = async () => {
     try {
@@ -75,9 +75,12 @@ export default function LoginPage() {
           placeholder="Password"
           required
         />
-        <p className="font-semibold text-end hover:underline cursor-pointer">
+        <Link
+          to={"/password-reset"}
+          className="font-semibold text-end hover:underline cursor-pointer"
+        >
           Forgot Password
-        </p>
+        </Link>
         {error && <p className="text-red-500">{error}</p>}
         <p>
           Don't have account?{" "}
