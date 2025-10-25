@@ -50,7 +50,7 @@ To get the project running locally, follow these steps:
    npm run dev
    ```
 
-4. Open your browser and navigate to the displayed local URL (e.g., http://localhost:3000) to view the app.
+4. Open your browser and navigate to the displayed local URL (e.g., https://ph-assignment-9-a1152.web.app/) to view the app.
 
 5. For building the project for production:
    ```bash
