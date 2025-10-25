@@ -1,16 +1,78 @@
-# React + Vite
+# SkillExplorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+This project is the result of my assignment number 9, created with React and Vite. The application was scaffolded using the official React + Vite template, and demonstrates frontend routing, state management, component architecture and other foundational React features.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧰 Technologies & Tools
 
-## React Compiler
+- React (JSX, functional components, hooks)
+- Vite (fast build & development environment)
+- ESLint for code style & linting
+- JavaScript (ES6+)
+- Node / npm for package management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📂 Project Structure
 
-## Expanding the ESLint configuration
+Here is a breakdown of the main folders and files:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+/images              → asset images used in the application
+/public              → static files and the main `index.html`
+/src                 → source code (components, pages, etc)
+.gitignore           → files to ignore in version control
+package.json         → project metadata & dependencies
+vite.config.js       → Vite configuration
+eslint.config.js     → linting rules
+README.md            → this documentation
+```
+
+## 🚀 Getting Started
+
+To get the project running locally, follow these steps:
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/ShoFiq6030/PH_Assignment-9.git
+   cd PH_Assignment-9
+   ```
+
+2. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to the displayed local URL (e.g., http://localhost:3000) to view the app.
+
+5. For building the project for production:
+   ```bash
+   npm run build
+   ```
+
+## ✅ Features
+
+- Fast development using Vite’s hot‑module reloading
+- Structured React component architecture
+- ESLint integrated for maintaining code quality
+- Easy to extend: add new pages, components or routing as needed
+
+## 📌 Future Enhancements
+
+- Add state management (e.g., Redux, Context API) for larger scale
+- Implement routing guards or private routes
+- Integrate backend or API for dynamic data
+- Add unit/integration tests (Jest, React Testing Library)
+- Expand styling/theme (CSS‑in‑JS, Tailwind, etc)
+
+## 👤 Author
+
+**ShoFiq6030**  
+[GitHub Profile](https://github.com/ShoFiq6030)
