@@ -19,7 +19,7 @@ export default function LoginPage() {
 
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(email, password);
+    // console.log(email, password);
     try {
       setError("");
       setLoading(true);

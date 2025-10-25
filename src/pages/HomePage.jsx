@@ -6,7 +6,7 @@ import PopularSkills from "./../components/HomePage/PopularSkills";
 
 export default function HomePage() {
   const data = useLoaderData();
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <Carousel />

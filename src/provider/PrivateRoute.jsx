@@ -5,7 +5,7 @@ import Loading from "../components/common/Loading";
 
 export default function PrivateRoute({ children }) {
   const { user, authLoading } = use(AuthContext);
-  console.log(user);
+  // console.log(user);
   const location = useLocation();
   if (authLoading) {
     return <Loading />;

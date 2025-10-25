@@ -8,12 +8,12 @@ export default function UserProfilePage() {
   const [openModal, setOpenModal] = useState(false);
   // const { userId } = useParams();
   const { user, updateProfileInfo, setUser } = use(AuthContext);
-  console.log(user);
+  // console.log(user);
   const handleProfileUpdate = async (e) => {
     e.preventDefault();
     const displayName = e.target.name.value;
     const photoURL = e.target.photoURL.value;
-    console.log(displayName, photoURL);
+    // console.log(displayName, photoURL);
     const userInfo = {
       displayName,
       photoURL,

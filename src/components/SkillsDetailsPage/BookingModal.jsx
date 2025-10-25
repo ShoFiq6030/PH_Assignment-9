@@ -27,7 +27,7 @@ export default function BookingModal({ handleToggleModal, onSubmitBooking }) {
     e.preventDefault();
     onSubmitBooking(formData);
   };
-  console.log(user);
+  // console.log(user);
   return (
     <dialog id="my_modal_1" className="modal">
       <div className="modal-box space-y-6">

@@ -19,7 +19,7 @@ export default function RegistrationPage() {
     const email = e.target.email.value;
     const password = e.target.password.value;
     const photoUrl = e.target.photoUrl.value;
-    console.log(name, email, password);
+    // console.log(name, email, password);
 
     if (!regex.test(password)) {
       setError(
@@ -27,10 +27,10 @@ export default function RegistrationPage() {
       );
       return;
     }
-    console.log(name, email, password);
+    // console.log(name, email, password);
     try {
       const userDetails = createUser(email, password);
-      console.log("User created successfully:", userDetails);
+      // console.log("User created successfully:", userDetails);
       toast.success("User created successfully!");
       setUser(userDetails.user);
       redirect("/");

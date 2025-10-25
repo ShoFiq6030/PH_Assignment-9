@@ -20,7 +20,7 @@ export default function CategoryWiseSkillsPage() {
           (skill) => skill.category === category
         );
 
-        console.log("Filtered Skills:", filteredSkills);
+        // console.log("Filtered Skills:", filteredSkills);
         setSkills(filteredSkills);
       } catch (err) {
         console.log(err);

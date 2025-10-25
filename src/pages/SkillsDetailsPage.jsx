@@ -30,7 +30,7 @@ export default function SkillsDetailsPage() {
     fetchSkillDetails();
   }, [skillId]);
 
-  console.log(skill);
+  // console.log(skill);
 
   const handleToggleModal = () => {
     const modal = document.getElementById("my_modal_1");
@@ -42,7 +42,7 @@ export default function SkillsDetailsPage() {
   };
   const handleSubmitBooking = (formData) => {
     toast.success("Booking Successful!");
-    console.log(formData);
+    // console.log(formData);
     handleToggleModal();
     setIsBooked(true);
   };

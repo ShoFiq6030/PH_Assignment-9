@@ -45,7 +45,7 @@ export default function Carousel() {
                 a trusted community of lifelong learners and creators.
               </p>
               <Link to="/">
-                <button className="btn lg:w-[200px]  custom-bg-color-primary  text-white">
+                <button className="btn lg:w-[200px]  custom-bg-color-primary  ">
                   Explore
                 </button>
               </Link>
