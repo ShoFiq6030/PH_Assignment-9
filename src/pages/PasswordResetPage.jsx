@@ -2,6 +2,7 @@ import React, { use, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 import { toast } from "react-toastify";
+import { Navigate } from "react-router";
 
 export default function PasswordResetPage() {
   const [loading, setLoading] = useState(false);
@@ -19,9 +20,10 @@ export default function PasswordResetPage() {
 
       toast.success("Password reset email send successfully!");
       navigate("/login");
+      window.open("https://mail.google.com/", "_blank");
     } catch (err) {
-      console.log(err.massage);
-      setError(err.massage);
+      console.log(err.message);
+      setError(err.message);
     } finally {
       setLoading(false);
     }
@@ -36,7 +38,9 @@ export default function PasswordResetPage() {
           Reset Password
         </h2>
 
-        <label className="label">Email</label>
+        <label className="label">
+          Email<span className="text-red-500">*</span>
+        </label>
         <input
           type="email"
           name="email"
@@ -46,7 +50,7 @@ export default function PasswordResetPage() {
         />
 
         <p>
-          go to{" "}
+          Go to{" "}
           <Link to={"/login"} className="font-bold hover:underline">
             login
           </Link>

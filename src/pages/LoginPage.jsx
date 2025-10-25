@@ -2,10 +2,13 @@ import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 import { toast } from "react-toastify";
+import { FaRegEye } from "react-icons/fa6";
+import { FaRegEyeSlash } from "react-icons/fa";
 
 export default function LoginPage() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -58,7 +61,9 @@ export default function LoginPage() {
           Login
         </h2>
 
-        <label className="label">Email</label>
+        <label className="label">
+          Email<span className="text-red-500">*</span>
+        </label>
         <input
           type="email"
           name="email"
@@ -67,14 +72,29 @@ export default function LoginPage() {
           required
         />
 
-        <label className="label">Password</label>
-        <input
-          type="password"
-          name="password"
-          className="input"
-          placeholder="Password"
-          required
-        />
+        <label className="label">
+          Password<span className="text-red-500">*</span>
+        </label>
+        <div className="flex relative">
+          <input
+            type={showPassword ? "text" : "password"}
+            name="password"
+            className="input"
+            placeholder="Password"
+            required
+          />
+          <div
+            className="absolute right-1 top-3"
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? (
+              <FaRegEyeSlash size={15} />
+            ) : (
+              <FaRegEye size={15} />
+            )}
+          </div>
+        </div>
+
         <Link
           to={"/password-reset"}
           className="font-semibold text-end hover:underline cursor-pointer"
