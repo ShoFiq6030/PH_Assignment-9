@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 export default function RootLayout() {
   return (
     <div className="flex flex-col  bg-gray-300">
-      <div className="sticky top-0 z-50">
+      <div className="sticky top-0 z-50  bg-base-100">
         <Navbar />
       </div>
       <div className="min-h-screen mx-auto">

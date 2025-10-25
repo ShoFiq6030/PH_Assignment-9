@@ -11,6 +11,8 @@ import RegistrationPage from "../pages/RegistrationPage";
 import PrivateRoute from "../provider/PrivateRoute";
 import UserProfilePage from "../pages/UserProfilePage";
 import PasswordResetPage from "../pages/PasswordResetPage";
+import Loading from "../components/common/Loading";
+import NotFoundPage from "./../pages/NotFoundPage";
 
 let router = createBrowserRouter([
   {
@@ -22,11 +24,13 @@ let router = createBrowserRouter([
         index: true,
         element: <HomePage />,
         loader: () => fetch("/data/categories.json"),
+        hydrateFallbackElement: <Loading />,
       },
       {
         path: "/category",
         element: <CategoryPage />,
         loader: () => fetch("/data/categories.json"),
+        hydrateFallbackElement: <Loading />,
       },
       {
         path: "/category/:category",
@@ -54,7 +58,11 @@ let router = createBrowserRouter([
       },
       {
         path: "/blogs",
-        element: <h2>Coming Soon...</h2>,
+        element: (
+          <div className="flex justify-center items-center min-h-screen">
+            <h2>Coming Soon...</h2>
+          </div>
+        ),
       },
       {
         path: "/password-reset",
@@ -62,7 +70,7 @@ let router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <div>not found</div>,
+        element: <NotFoundPage />,
       },
     ],
   },

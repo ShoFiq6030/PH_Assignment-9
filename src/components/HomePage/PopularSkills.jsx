@@ -27,7 +27,7 @@ export default function PopularSkills() {
 
   return (
     <section className="container mx-auto my-10">
-      <div className="my-10 text-center font-bold text-2xl">PopularSkills</div>
+      <div className="my-10 text-center font-bold text-2xl">Popular Skills</div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 ">
         {skills.map((skill) => (
           <SkillsCard skill={skill} key={skill.skillId} />

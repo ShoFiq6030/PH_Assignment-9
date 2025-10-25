@@ -20,13 +20,17 @@ const provider = new GoogleAuthProvider();
 
 export default function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
+  const [authLoading, setAuthLoading] = useState(true);
 
   //  observer function to keep user state
 
   useEffect(() => {
+    setAuthLoading(true);
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setAuthLoading(false);
     });
+
     return () => unsubscribe();
   }, []);
 
@@ -70,6 +74,7 @@ export default function AuthProvider({ children }) {
     googleSignin,
     updateProfileInfo,
     resetPassword,
+    authLoading,
   };
 
   return (

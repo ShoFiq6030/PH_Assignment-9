@@ -14,12 +14,12 @@ export default function Carousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-[300px] md:h-[600px] lg:h-screen overflow-hidden">
+    <div className="relative w-full h-[300px] md:h-[600px] lg:h-[60vh] overflow-hidden">
       {slides.map((src, index) => (
         <div
           key={index}
@@ -33,7 +33,7 @@ export default function Carousel() {
               <h2 className="text-xl md:text-3xl lg:text-6xl font-bold leading-tight lg:leading-normal text-white">
                 Discover Your Next Adventure
               </h2>
-              <p className="text-white text-lg">
+              <p className="text-white text-lg hidden md:block">
                 Discover and share talents with people around you! Our app is an
                 interactive skill-exchange platform that connects individuals
                 who want to learn, teach, or trade skills locally. Whether

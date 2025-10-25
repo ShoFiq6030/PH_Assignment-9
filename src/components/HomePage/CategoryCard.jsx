@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function CategoryCard({ category }) {
   return (
-    <div className="card bg-gray-100 w-96 shadow-sm hover:scale-103 transition-transform duration-400">
+    <div className="card bg-gray-100 max-w-96 shadow-sm hover:scale-103 transition-transform duration-400">
       <div className="card-body">
         <h2 className="card-title underline">{category.name}</h2>
         <p>{category.description}</p>

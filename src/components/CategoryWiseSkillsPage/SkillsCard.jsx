@@ -2,16 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 export default function SkillsCard({ skill }) {
-  // "skillId": "s1",
-  //     "skillName": "Beginner Guitar Lessons",
-  //     "providerId": "u1",
-  //     "providerName": "Alex Martin",
-  //     "price": 20,
-  //     "rating": 4.8,
-  //     "slotsAvailable": 3,
-  //     "description": "Acoustic guitar classes for complete beginners focusing on chords and rhythm.",
-  //     "image": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
-  //     "category": "Music"
+ 
   const {
     skillId,
     skillName,
@@ -24,11 +15,11 @@ export default function SkillsCard({ skill }) {
   } = skill;
 
   return (
-    <div className="card card-side bg-base-100 shadow-sm w-[500px] hover:scale-102 transition-transform duration-300">
-      <figure className="w-1/2">
+    <div className="card card-side flex flex-col lg:flex-row bg-base-100 shadow-sm w-[300px] lg:w-[500px]  hover:scale-102 transition-transform duration-300">
+      <figure className=" w-full h-40 lg:h-full lg:w-1/2 rounded-lg">
         <img src={image} alt={skillName} />
       </figure>
-      <div className="card-body w-1/2 ">
+      <div className="card-body lg:w-1/2 flex flex-col items-center justify-center ">
         <h2 className="card-title">{skillName}</h2>
         {/* <p className="text-gray-500">{description}</p> */}
         <p className="hover:underline cursor-pointer font-semibold ">
